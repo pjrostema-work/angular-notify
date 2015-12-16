@@ -88,7 +88,7 @@ angular.module('cgNotify', []).factory('notify',['$timeout','$http','$compile','
                         var height = element[0].offsetHeight;
                         var top = currentY + height + shadowHeight;
                         if (element.attr('data-closing')){
-                            top += 20;
+                            top -= 40;
                         } else {
                             currentY += height + verticalSpacing;
                         }
